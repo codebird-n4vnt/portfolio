@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* ── Lumina Dev Design Tokens (Tailwind v4 CSS-first config) ── */
+@theme inline {
+  /* Colors */
+  --color-bg:               #f7f9fb;
+  --color-surface:          #ffffff;
+  --color-surface-low:      #f2f4f6;
+  --color-surface-high:     #e6e8ea;
+  --color-on-bg:            #191c1e;
+  --color-on-surface-var:   #45464d;
+  --color-outline:          #76777d;
+  --color-outline-var:      #c6c6cd;
+  --color-primary:          #0f172a;
+  --color-primary-card:     #131b2e;
+  --color-secondary:        #712ae2;
+  --color-secondary-card:   #8a4cfc;
+  --color-accent:           #f97316;
+
+  /* Fonts */
+  --font-display:   var(--font-hanken);
+  --font-body:      var(--font-inter);
+  --font-mono:      var(--font-jetbrains);
+
+  /* Border radius */
+  --radius-sm:   0.25rem;
+  --radius:      0.5rem;
+  --radius-md:   0.75rem;
+  --radius-lg:   1rem;
+  --radius-xl:   1.5rem;
+  --radius-full: 9999px;
+}
+
+/* ── Base ── */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-bg);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-on-bg);
+  font-family: var(--font-body), Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-surface-low); }
+::-webkit-scrollbar-thumb { background: var(--color-outline-var); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-secondary); }
+
+/* ── Fade-up animation ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fadeUp 0.6s ease forwards;
+}
