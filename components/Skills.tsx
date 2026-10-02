@@ -6,28 +6,28 @@ type SkillGroup = {
 
 const skillGroups: SkillGroup[] = [
   {
-    category: "Web3 & Blockchain",
-    tags: ["Solana", "Ethereum", "Somnia", "elizaOS", "Kamino", "Foundry", "Anchor"],
+    category: "Solana",
+    tags: ["Anchor", "Token-2022", "Confidential Balances", "@solana/kit", "Kamino", "LiteSVM", "Surfpool"],
+  },
+  {
+    category: "EVM",
+    tags: ["Foundry", "Hardhat", "ENS", "Uniswap V3", "Somnia", "wagmi", "viem"],
   },
   {
     category: "Languages",
-    tags: ["JavaScript", "TypeScript", "Rust", "Solidity", "C++"],
+    tags: ["TypeScript", "JavaScript", "Rust", "Solidity", "C++"],
   },
   {
     category: "Frontend",
-    tags: ["React", "Next.js", "HTML5", "Tailwind CSS"],
+    tags: ["React", "Next.js", "Tailwind CSS", "DaisyUI", "Zustand"],
   },
   {
-    category: "Backend & APIs",
-    tags: ["Node.js", "Express.js", "WebSockets", "REST APIs", "Socket.io"],
+    category: "Backend",
+    tags: ["Node.js", "Express", "Socket.IO", "MongoDB", "REST APIs", "JWT", "elizaOS"],
   },
   {
-    category: "Database & Tools",
-    tags: ["MongoDB", "Git", "Data Structures", "Open Source", "LeetCode"],
-  },
-  {
-    category: "Currently Learning",
-    tags: ["Docker", "CI/CD", "Grafana", "LoRA Fine-tuning"],
+    category: "Problem Solving",
+    tags: ["Data Structures", "Algorithms", "LeetCode", "Codeforces"],
     highlight: true,
   },
 ];
@@ -40,7 +40,7 @@ export default function Skills() {
           className="text-[12px] font-semibold uppercase tracking-[0.12em] mb-3"
           style={{ fontFamily: "var(--font-mono)", color: "var(--color-secondary)" }}
         >
-          // Technical Skills
+          # Technical Skills
         </p>
         <h2
           className="font-bold tracking-[-0.02em] mb-12"

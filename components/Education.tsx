@@ -6,7 +6,7 @@ export default function Education() {
           className="text-[12px] font-semibold uppercase tracking-[0.12em] mb-3"
           style={{ fontFamily: "var(--font-mono)", color: "var(--color-secondary)" }}
         >
-          // Education
+          # Education
         </p>
         <h2
           className="font-bold tracking-[-0.02em] mb-12"
@@ -21,7 +21,7 @@ export default function Education() {
 
         {/* Card */}
         <div
-          className="flex flex-col sm:flex-row justify-between items-start gap-6 rounded-[1.5rem] p-10 transition-all duration-300 hover:-translate-y-1"
+          className="flex flex-col sm:flex-row justify-between items-start gap-6 rounded-[1.5rem] p-7 sm:p-10 transition-all duration-300 hover:-translate-y-1"
           style={{
             background: "var(--color-primary-card)",
             boxShadow: "0 20px 40px rgba(0,0,0,0.08)",
@@ -46,7 +46,7 @@ export default function Education() {
                 color: "#c4b5fd",
               }}
             >
-              ★ Adm. No. 24JE0562
+              Adm. No. 24JE0562
             </span>
           </div>
           <div className="sm:text-right flex-shrink-0">

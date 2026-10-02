@@ -24,9 +24,9 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Navneet Sahu — Developer Portfolio",
+  title: "Navneet Sahu — Full Stack & Web3 Developer",
   description:
-    "Full Stack & Web3 Developer. B.Tech Chemical Engineering at IIT (ISM) Dhanbad. Building on Solana, Ethereum & the open web.",
+    "Full stack and Web3 developer at IIT (ISM) Dhanbad. Building Sealed (private stablecoin payroll on Solana), Insure (parametric insurance on Solana) and Mand(ate), an ENS prize winner at HackMoney 2026.",
   keywords: [
     "Navneet Sahu",
     "Web3",
@@ -36,10 +36,11 @@ export const metadata: Metadata = {
     "Portfolio",
   ],
   openGraph: {
-    title: "Navneet Sahu — Developer Portfolio",
+    title: "Navneet Sahu — Full Stack & Web3 Developer",
     description:
-      "Full Stack & Web3 Developer building on Solana, Ethereum, and the open web.",
+      "Solana programs, EVM contracts and the apps people use them through. Projects: Sealed, Insure, Mand(ate), FluxDEX.",
     type: "website",
+    images: ["/profile.jpg"],
   },
 };
 

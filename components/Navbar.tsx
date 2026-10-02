@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-4 z-50 flex justify-center px-6 mt-4">
       <div
-        className="flex items-center gap-8 px-6 py-[10px] rounded-full border"
+        className="flex items-center gap-5 sm:gap-8 px-5 sm:px-6 py-[10px] rounded-full border"
         style={{
           background: "rgba(255,255,255,0.82)",
           backdropFilter: "blur(12px)",
@@ -38,13 +38,14 @@ export default function Navbar() {
           boxShadow: "0 4px 24px rgba(0,0,0,0.06)",
         }}
       >
-        <span
+        <a
+          href="#about"
           className="text-[15px] font-extrabold tracking-tight"
           style={{ fontFamily: "var(--font-display)", color: "var(--color-primary)" }}
         >
           NS.
-        </span>
-        <ul className="flex gap-7 list-none">
+        </a>
+        <ul className="flex gap-4 sm:gap-7 list-none">
           {links.map(({ label, href }) => {
             const isActive = activeSection === href.slice(1);
             return (
